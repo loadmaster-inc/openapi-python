@@ -37,7 +37,7 @@ if __name__ == '__main__':
         'pointedContainers': [],
         'skuCargoes': []
     }
-    r = requests.post('https://openapi.zhuangxiang.com/OptimizeLoadingTask', data=json.dumps({'taskdata': taskdata}), headers={
+    r = requests.post('https://openapi.zhuangxiang.com/OptimizeLoadingTask', data=json.dumps({'taskData': taskdata}), headers={
         'Authorization': 'bearer ' + access_token,
         'content-type': 'application/json'
     })
