@@ -3,7 +3,7 @@ import requests
 
 
 if __name__ == '__main__':
-    response = requests.post('https://api.zhuangxiang.com/connect/token', data={ # URL
+    response = requests.post('https://api3.zhuangxiang.com/connect/token', data={ # URL
         'client_id': 'your app id', # 填写app-id、app-secret、账号及密码
         'client_secret': 'your app secret',
         'grant_type': 'password',
@@ -37,7 +37,7 @@ if __name__ == '__main__':
         'pointedContainers': [],
         'skuCargoes': []
     }
-    r = requests.post('https://openapiv2.zhuangxiang.com/OptimizeLoadingTask', data=json.dumps({'taskData': taskdata}), headers={
+    r = requests.post('https://openapiv3.zhuangxiang.com/OptimizeLoadingTask', data=json.dumps({'taskData': taskdata}), headers={
         'Authorization': 'bearer ' + access_token,
         'content-type': 'application/json'
     }) # 发送请求，使用access_token进行认证，Body为要计算的数据
