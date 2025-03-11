@@ -8,7 +8,8 @@ if __name__ == '__main__':
         'client_secret': 'your app secret',
         'grant_type': 'password',
         'username': 'your account name(admin)',
-        'password': 'your account password'
+        'password': 'your account password',
+        'scope' : "Integrate_Api Optimize_Api"  # 这里填写你拥有的scope
     }, cookies={
         'Abp.TenantId': 'your tenant id' # 设置Cookie，使用租户id
     })
